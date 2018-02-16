@@ -1,6 +1,6 @@
 # Twitter Map
 
-### The app could be found and tries on [PythonAnywhere.com](http://kangaroosinantarctica.pythonanywhere.com)
+   ### The app could be found and tries on [PythonAnywhere.com](http://kangaroosinantarctica.pythonanywhere.com)
 
    It uses another github repositry - *[twitter_api](https://github.com/anrom7/twitter_api) by [anrom7](https://github.com/anrom7/twitter_api).   
    (Copyright (c) 2007 Leah Culver, MIT license)
@@ -16,4 +16,8 @@
    The file [twitter_server.py](https://github.com/KangaroosInAntarcitica/TwitterMap/blob/master/twitter_server.py) displays the user
 and his friends on a map (using geocode coordinates), together with some information from his account and link to his account.   
 
+   ### Examples:   
 
+![twitter map](https://github.com/KangaroosInAntarcitica/TwitterMap/blob/master/__temp__/example1.PNG)
+![twitter map](https://github.com/KangaroosInAntarcitica/TwitterMap/blob/master/__temp__/example2.PNG)
+![twitter map](https://github.com/KangaroosInAntarcitica/TwitterMap/blob/master/__temp__/example3.PNG)
