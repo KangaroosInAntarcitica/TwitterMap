@@ -1,0 +1,23 @@
+<a href="{{'https://twitter.com/' + data['screen_name']}}">
+    <div class="popup">
+        <img src="{{data['profile_image']}}" class="popupImage">
+        <div class="popupNameHolder">
+            <p class="popupName">{{data['name']}}</p>
+            <p class="popupInfo">{{'@' + data['screen_name']}}</p>
+        </div>
+        <table class="popupTable">
+            <tr>
+                <td>Followers</td>
+                <td>Following</td>
+                <td>Likes</td>
+                <td>Tweets </td>
+            </tr>
+            <tr>
+                <td>{{str(data['followers_count'])}}</td>
+                <td>{{str(data['friends_count'])}}</td>
+                <td>{{str(data['favourites_count'])}}</td>
+                <td>{{str(data['statuses_count'])}}</td>
+            </tr>
+        </table>
+    </div>
+</a>

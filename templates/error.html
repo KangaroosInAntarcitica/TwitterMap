@@ -1,0 +1,64 @@
+<style>
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    .holder {
+        width: 330px;
+        margin: auto;
+        marginTop: 30px;
+    }
+    #mapForm {
+        z-index: 1000;
+        padding: 8px;
+        padding-bottom: 6px;
+        border-radius: 4px;
+        background-color: #0001;
+        height: 32px;
+    }
+    #mapForm * {
+        border-radius: 4px;
+        height: 30px;
+        background: #FFF;
+        border: 2px solid #7d93a7;
+        padding-left: 5px;
+    }
+    .name {
+        padding: 3px;
+        font-size: 40px;
+        color: #1da1f2;
+        z-index: 1000;
+    }
+    .error {
+        padding: 3px;
+        font-size: 30px;
+        color: #f22701;
+        z-index: 1000;
+    }
+    .holderText {
+        font-size: 18px;
+        color: #444;
+    }
+</style>
+
+<div class="holder">
+    <div class="name">Twitter Map</div>
+    <div class="error">Error occured</div>
+    <div class="holderText" style="color: #f2674e; padding-left: 3px;"> {{error}} </div>
+    <br>
+    <div class="holderText">Please try again. <br> Specify
+        <span style="color: #1da1f2; text-decoration: underline;">Twitter</span> user account.
+    <ul>
+        <li><u>account</u> - twitter username</li>
+        <li><u>count</u> - number of friends to display</li>
+    </ul>
+    </div>
+    <form name="map" id="mapForm" method="get" action="twittermap">
+        <input type="text" name="q" placeholder="Account name">
+        <input type="number" name="count" placeholder="count" style="width: 65px;" value="5">
+        <input type="submit" name="submit" value="Send">
+    </form>
+    <div class="holderText">
+        Be patient. The world is big - It might take a while to find all your friends.
+    </div>
+</div>

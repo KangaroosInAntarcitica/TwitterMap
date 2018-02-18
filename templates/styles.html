@@ -1,0 +1,106 @@
+<style>
+	.leaflet-popup-content-wrapper {
+		background: #FFFFFF00 !important;
+	}
+	.leaflet-popup-content {
+		margin: 14px !important;
+	}
+	.leaflet-popup-close-button {
+		color: #222 !important;
+	}
+	.leaflet-popup-tip {
+		background: #FFFFFF00 !important;
+	}
+	.popupC {
+		width:300px; 
+		overflow: hidden
+	}
+	.popupC2 {
+		width: 340px;
+		padding-right:40px;
+		overflow-y:scroll; 
+		overflow-x:hidden; 
+		max-height:500px;
+	}
+	.popup {
+		width: 300px;
+		margin-bottom: 5px;
+		background-color: #1da1f2;
+		padding: 10px;
+		border-radius: 10px;
+		flex-direction: row;
+	}
+	.popupImage {
+		width: 40px;
+		height: 40px;
+		border-radius: 20px;
+		float: left;
+	}
+	.popupNameHolder {
+		float: left; 
+		margin-left: 10px
+	}
+	.popupName {
+		font-size: 20px;
+		padding: 0;
+		margin: 0 !important;
+		color: #FFF;
+	}
+	.popupInfo {
+		font-size: 12px;
+		padding: 0;
+		margin: 0 !important;
+		color: #FFFA;
+	}
+	.popupTable {
+		flex: left;
+		width: 100%;
+		border-spacing: 1px;
+		margin-top: 15px;
+	}
+	.popupTable td {
+		font-size: 12px;
+		color: #005589;
+		text-decoration: underline;
+	}
+
+    #mapForm {
+        position: absolute;
+        left: 60px;
+        top: calc(10px + 32px);
+        z-index: 1000;
+        padding: 1px;
+        border-radius: 4px;
+        background-color: #0001;
+        height: 32px;
+    }
+    #mapForm * {
+        border-radius: 4px;
+        height: 30px;
+        background: #FFF;
+        border: 2px solid #7d93a7;
+        padding-left: 5px;
+    }
+    .name {
+        position: absolute;
+        top: 10px;
+        left: 60px;
+        padding: 2px;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 20px;
+        color: #1da1f2;
+        z-index: 1000;
+
+        border-radius: 4px;
+        background-color: #FFF5;
+        height: 28px;
+    }
+</style>
+
+<div class="name">Twitter Map</div>
+<form name="map" id="mapForm" method="get" action="twittermap">
+    <input type="text" name="q" placeholder="Account name">
+    <input type="number" name="count" placeholder="count" style="width: 65px;" value="5">
+    <input type="submit" name="submit">
+</form>
